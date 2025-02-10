@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="CalculatorApp.Views.CalculatorPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <Grid
+        Padding="16"
+        ColumnDefinitions="*,*,*,*"
+        ColumnSpacing="2"
+        RowDefinitions="2*,*,*,*,*,*"
+        RowSpacing="2">
+
+        <Label
+            x:Name="equationLabel"
+            Grid.Row="0"
+            Grid.ColumnSpan="4"
+            FontSize="22"
+            HorizontalTextAlignment="End"
+            LineBreakMode="NoWrap"
+            Text=""
+            TextColor="{StaticResource Gray400}"
+            VerticalTextAlignment="Start" />
+
+        <Label
+            x:Name="numbersLabel"
+            Grid.ColumnSpan="4"
+            FontAttributes="Bold"
+            FontSize="64"
+            HorizontalTextAlignment="End"
+            LineBreakMode="NoWrap"
+            Text="0"
+            TextColor="{StaticResource Gray400}"
+            VerticalTextAlignment="End" />
+
+        <BoxView
+            Grid.Row="0"
+            Grid.ColumnSpan="4"
+            BackgroundColor="{StaticResource LightGray}"
+            HeightRequest="1"
+            VerticalOptions="End" />
+
+        <Button
+            Grid.Row="1"
+            Grid.Column="0"
+            Text="%"
+            Clicked="OnButtonClicked"/>
+
+        <Button
+            Grid.Row="1"
+            Grid.Column="1"
+            IsVisible="True"
+            Text="CE"
+            Clicked="OnButtonClicked"/>
+
+        <Button
+            Grid.Row="1"
+            Grid.Column="2"
+            Text="C"
+            Clicked="OnButtonClicked"/>
+
+        <Button
+            Grid.Row="2"
+            Grid.Column="0"
+            Text="7"
+            Clicked="OnButtonClicked"/>
+        <Button
+            Grid.Row="2"
+            Grid.Column="1"
+            Text="8"
+            Clicked="OnButtonClicked"/>
+        <Button
+            Grid.Row="2"
+            Grid.Column="2"
+            Text="9"
+            Clicked="OnButtonClicked"/>
+
+        <Button
+            Grid.Row="3"
+            Grid.Column="0"
+            Text="4"
+            Clicked="OnButtonClicked"/>
+        <Button
+            Grid.Row="3"
+            Grid.Column="1"
+            Text="5"
+            Clicked="OnButtonClicked"/>
+        <Button
+            Grid.Row="3"
+            Grid.Column="2"
+            Text="6"
+            Clicked="OnButtonClicked"/>
+
+        <Button
+            Grid.Row="4"
+            Grid.Column="0"
+            Text="1"
+            Clicked="OnButtonClicked"/>
+        <Button
+            Grid.Row="4"
+            Grid.Column="1"
+            Text="2"
+            Clicked="OnButtonClicked"/>
+        <Button
+            Grid.Row="4"
+            Grid.Column="2"
+            Text="3"
+            Clicked="OnButtonClicked"/>
+
+        <Button
+            Grid.Row="5"
+            Grid.Column="0"
+            IsVisible="True"
+            Text="+/-"
+            Clicked="OnButtonClicked"/>
+        <Button
+            Grid.Row="5"
+            Grid.Column="1"
+            Text="0"
+            Clicked="OnButtonClicked"/>
+        <Button
+            Grid.Row="5"
+            Grid.Column="2"
+            Text="."
+            Clicked="OnButtonClicked"/>
+
+        <Button
+            Grid.Row="1"
+            Grid.Column="3"
+            Text="/"
+            Clicked="OnButtonClicked"/>
+        <Button
+            Grid.Row="2"
+            Grid.Column="3"
+            Text="*"
+            Clicked="OnButtonClicked"/>
+        <Button
+            Grid.Row="3"
+            Grid.Column="3"
+            Text="-"
+            Clicked="OnButtonClicked"/>
+        <Button
+            Grid.Row="4"
+            Grid.Column="3"
+            Text="+"
+            Clicked="OnButtonClicked"/>
+        <Button
+            Grid.Row="5"
+            Grid.Column="3"
+            Text="="
+            Clicked="OnButtonClicked"/>
+    </Grid>
+</ContentPage>
